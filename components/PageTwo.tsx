@@ -149,6 +149,8 @@ const PageTwo = () => {
                     <div className="w-full lg:w-1/3 flex justify-center items-center relative">
                         <div className="absolute inset-0 bg-blue-100 rounded-full blur-3xl opacity-20 animate-pulse" />
                         <Image
+                            width={300}
+                            height={300}
                             src={securityIcon.src}
                             alt="Security Icon"
                             className="w-72 h-72 transform transition-transform duration-500 hover:scale-110"

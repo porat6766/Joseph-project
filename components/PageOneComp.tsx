@@ -21,10 +21,11 @@ const PageOneComp = () => {
 
             <div className="relative w-[300px] h-[300px] rounded-full overflow-hidden border-4 border-green-500 mb-6">
                 <Image
-
                     src={JosephPhot.src}
                     alt="יוסף מזרחי"
                     className="w-full h-full object-cover"
+                    width={300}
+                    height={300}
                 />
             </div>
 
@@ -52,6 +53,8 @@ const PageOneComp = () => {
                     src={whatsApp.src}
                     alt="WhatsApp"
                     className="w-10 h-10"
+                    width={300}
+                    height={300}
                 />
             </a>
         </div>

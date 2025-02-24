@@ -1,6 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
+import Logo from "../assets/Screenshot_2025-02-24_185209-removebg-preview.png";
+import Link from "next/link";  // Importing Next.js Link
 
 const Hamburger = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +14,7 @@ const Hamburger = () => {
 
     return (
         <div>
+
             <button
                 className="lg:hidden absolute top-4 right-4 p-2 cursor-pointer"
                 onClick={toggleMenu}
@@ -29,24 +33,27 @@ const Hamburger = () => {
                     </button>
                 </div>
                 <div className="flex flex-col items-center justify-center h-full text-white">
-                    <a href="#home" className="py-2 text-xl">עמוד ראשי</a>
-                    <a href="#about" className="py-2 text-xl">קצת עליי</a>
-                    <a href="#services" className="py-2 text-xl">שירותי המשרד</a>
-                    <a href="#blog" className="py-2 text-xl">בלוג</a>
-                    <a href="#articles" className="py-2 text-xl">כתבות</a>
-                    <a href="#contact" className="py-2 text-xl">צור קשר</a>
+                    <Image src={Logo} alt="Logo" width={100} height={100} className="mb-4" />
+                    <Link href="/" className="py-2 text-xl">עמוד ראשי</Link>
+                    <Link href="/about" className="py-2 text-xl">קצת עליי</Link>
+                    <Link href="/services" className="py-2 text-xl">שירותי המשרד</Link>
+                    <Link href="/blog" className="py-2 text-xl">בלוג</Link>
+                    <Link href="/articles" className="py-2 text-xl">כתבות</Link>
+                    <Link href="/contact" className="py-2 text-xl">צור קשר</Link>
                 </div>
             </div>
 
             <div className="hidden lg:flex justify-between items-center bg-gray-800 text-white p-4">
-                <div className="text-2xl">Logo</div>
+                <div className="flex items-center space-x-4">
+                    <Image src={Logo} alt="Logo" width={60} height={60} />
+                </div>
                 <div className="space-x-4">
-                    <a href="#home">עמוד ראשי</a>
-                    <a href="#about">קצת עליי</a>
-                    <a href="#services">שירותי המשרד</a>
-                    <a href="#blog">בלוג</a>
-                    <a href="#articles">כתבות</a>
-                    <a href="#contact">צור קשר</a>
+                    <Link href="/" className="ml-3">עמוד ראשי</Link>
+                    <Link href="/about">קצת עליי</Link>
+                    <Link href="/services">שירותי המשרד</Link>
+                    <Link href="/blog">בלוג</Link>
+                    <Link href="/articles">כתבות</Link>
+                    <Link href="/contact">צור קשר</Link>
                 </div>
             </div>
         </div>
