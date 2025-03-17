@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import profilePhoto from "../../assets/c7a020be-f777-4b65-bfa0-bea31fe2f37c.png";
+import profilePhoto from "../../assets//WhatsApp Image 2025-03-06 at 09.57.08_147e0141.jpg";
 import whatsApp from "../../assets/whatsapp.png";
 
 const AboutJoseph = () => {
