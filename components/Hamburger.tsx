@@ -36,6 +36,7 @@ const Hamburger = () => {
                     <Image src={Logo} alt="Logo" width={100} height={100} className="mb-4" />
                     <Link href="/" className="py-2 text-xl">עמוד ראשי</Link>
                     <Link href="/about" className="py-2 text-xl">קצת עליי</Link>
+                    <div></div>
                     <Link href="/services" className="py-2 text-xl">שירותי המשרד</Link>
                     <Link href="/blog" className="py-2 text-xl">בלוג</Link>
                     <Link href="/articles" className="py-2 text-xl">כתבות</Link>
